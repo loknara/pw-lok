@@ -1,0 +1,177 @@
+.home {
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+.about h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: #ffffff;
+  height: 50px;
+}
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  
+    
+}
+
+.skills h1 {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.skills .list {
+  list-style: none;
+  width: 60%;
+}
+
+.list span {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.arrow {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  animation: bounce 1s infinite;
+}
+
+.textMove{
+  margin-left: 200px;
+}
+
+.aboutMove{
+  margin-left: 100px;
+}
+
+.aboutText h1{
+  font-size: 50px;
+}
+
+
+/* ... your existing styles ... */
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.profilePhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  object-fit: cover;
+}
+
+.infoSection h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.infoSection p {
+  margin: 4px 0;
+  color: #ffffff;
+}
+
+.skillsSection, .bioSection {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skillsSection h2 {
+  margin-top: 0;
+}
+
+.bioSection p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .profileHeader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profilePhoto {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+}

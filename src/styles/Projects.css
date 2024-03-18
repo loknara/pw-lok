@@ -1,0 +1,114 @@
+.projects {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  overflow-x: hidden;
+}
+
+.projectTitle {
+  margin-bottom: 2rem;
+  font-size: 2.5rem; 
+  font-weight: 300; 
+  letter-spacing: 1px;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 30px;
+  padding: 0; 
+  list-style: none; 
+  max-width: 1200px; 
+  width: 100%; 
+  margin-top: 1rem;
+
+
+  transition: transform 0.3s ease;
+}
+
+.projectList:hover .projectContainer {
+  transform: scale(0.95); /* Example scale down value */
+}
+
+.projectContainer:hover {
+  transform: scale(2.08); /* Example scale back up value */
+  z-index: 2; /* Ensure the scaled item is above others if they overlap */
+}
+
+.projectItem {
+  background-color: #fff; /* Project items are white */
+  border-radius: 8px; /* Soften the corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transitions for interaction */
+  overflow: hidden; /* Make sure nothing overflows */
+  cursor: pointer;
+  background-color: #fff;
+  text-align: center; /* Center text for the project names */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.projectContainer {
+  transition: transform 0.3s ease;
+  display: inline-block; /* or 'flex' depending on your layout, with alignment adjustments as necessary */
+}
+
+.projectItem h2 {
+  margin: 0.5rem 0; /* Add some space above and below the project name */
+  padding: 0 1rem; /* Add padding to the sides */
+  font-size: 1rem; /* Choose an appropriate size for project names */
+  font-weight: 500; /* Medium font weight for the project names */
+  color: #000; 
+}
+
+
+.projectItem:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  /* transform: translateY(-5px); */
+
+}
+
+.bgImage {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%); /* Make the image black and white */
+  transition: opacity 0.3s ease;
+}
+
+
+.projectItem:hover .bgImage {
+  opacity: 0.8; /* Slightly reduce opacity on hover for effect */
+  filter: grayscale(0%); /* Remove grayscale filter on hover */
+
+}
+
+.projectItem h1 {
+  margin: 1rem; /* Add margin around the text */
+  font-size: 1.25rem; /* A comfortable font size for reading */
+}
+
+@media (max-width: 768px) {
+  .projectList {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .projectTitle {
+    font-size: 2rem; /* Slightly smaller title on very small screens */
+  }
+}
+
+
+
+.projectName {
+  font-weight: bold; /* Make the project name bold */
+  font-size: 1.2rem; /* Slightly larger font size for emphasis */
+  margin-top: 0.5rem; /* Space between the image and the project name */
+  color: #ffffff; /* Assuming a dark theme, adjust as needed */
+}
