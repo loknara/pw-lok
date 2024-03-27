@@ -4,15 +4,15 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import SchoolIcon from "@material-ui/icons/School";
-import WorkIcon from "@material-ui/icons/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
 
 function Experience() {
   return (
     <div className="experience">
       <VerticalTimeline lineColor="#ffffff">
         <VerticalTimelineElement
-          animate = {true}
+          animate={true}
           className="vertical-timeline-element--education"
           date="2021-2025"
           iconStyle={{ background: "#000000", color: "#fff" }}
@@ -22,7 +22,7 @@ function Experience() {
             The University of Texas at Dallas
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-          August 2021 - May 2025
+            August 2021 - May 2025
           </h4>
           <h4 className="vertical-timeline-element-subtitle">
             Bachelor's Degree
@@ -40,12 +40,13 @@ function Experience() {
             Tobu Pengin - Software Engineering Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-          June 2021 - September 2021
+            June 2021 - September 2021
           </h4>
-          <h4 className="vertical-timeline-element-subtitle">
-            Dallas, Tx
-          </h4>
-          <p>Developed an end to end open-source CRM cloud solution for an ERP system using Flask, Python, and Docker</p>
+          <h4 className="vertical-timeline-element-subtitle">Dallas, Tx</h4>
+          <p>
+            Developed an end to end open-source CRM cloud solution for an ERP
+            system using Flask, Python, and Docker
+          </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -58,13 +59,12 @@ function Experience() {
             UTDesign - Software Engineer (Contract)
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-          January 2023 - May 2023
+            January 2023 - May 2023
           </h4>
-          <h4 className="vertical-timeline-element-subtitle">
-            Richardson, TX
-          </h4>
+          <h4 className="vertical-timeline-element-subtitle">Richardson, TX</h4>
           <p>
-          Managed a team of 4 to build a service provider enabling login and authentication through UTD SSO
+            Managed a team of 4 to build a service provider enabling login and
+            authentication through UTD SSO
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -77,14 +77,33 @@ function Experience() {
             PNC - Software Engineering Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-          May 2023 - August 2023
+            May 2023 - August 2023
           </h4>
-          <h4 className="vertical-timeline-element-subtitle">
-            Dallas, TX
-          </h4>
+          <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
           <p>
-          Developed an end to end solution for tracking Cloud costs and automating total cost of ownership using scaled usage
-comparisons across the company using Java, SpringBoot, and Vue.js
+            Developed an end to end solution for tracking Cloud costs and
+            automating total cost of ownership using scaled usage comparisons
+            across the company using Java, SpringBoot, and Vue.js
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="August 2023 - Present"
+          iconStyle={{ background: "#000000", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Machine Learning and Artificial Intelligence Lab Researcher
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            August 2023 - Present
+          </h4>
+          <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+
+          <p>
+            Developed a machine learning algorithm to distinguish between DDoS
+            and normal data in computer networks through collaboration and
+            quantitative research on traffic generation and intrusion detection.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -97,15 +116,14 @@ comparisons across the company using Java, SpringBoot, and Vue.js
             Dallas Mavericks - Software Engineering Intern
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-          February 2024 - present
+            February 2024 - present
           </h4>
-          <h4 className="vertical-timeline-element-subtitle">
-            Dallas, TX
-          </h4>
-        
+          <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+
           <p>
-          Worked on an analytics dashboard using Node.js, React, and JavaScript to provide scouts and front office staff with
-real-time insights into player/team statistics and scouting reports
+            Worked on an analytics dashboard using Node.js, React, and
+            JavaScript to provide scouts and front office staff with real-time
+            insights into player/team statistics and scouting reports
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
