@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.92633ed1.css",
+    "main.js": "/static/js/main.1b4d6237.js",
+    "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
+    "static/media/NBA.png": "/static/media/NBA.34150ba6cafc506a9484.png",
+    "static/media/DallasMavs.png": "/static/media/DallasMavs.5ecc7c0ead879cbc22a7.png",
+    "static/media/CanCare.png": "/static/media/CanCare.28d37345e102517c417a.png",
+    "static/media/KiddieBank.png": "/static/media/KiddieBank.f48a382aa53602648195.png",
+    "static/media/lokeshheadshot.jpeg": "/static/media/lokeshheadshot.d8485f43451558c8c9d7.jpeg",
+    "static/media/chatbot.png": "/static/media/chatbot.5ca4671fc566d71f69cb.png",
+    "static/media/SF.png": "/static/media/SF.ac1a6bfe0aecbc7f6f87.png",
+    "static/media/UTDSSO.webp": "/static/media/UTDSSO.f4669a0d7ad4928c9611.webp",
+    "index.html": "/index.html",
+    "main.92633ed1.css.map": "/static/css/main.92633ed1.css.map",
+    "main.1b4d6237.js.map": "/static/js/main.1b4d6237.js.map",
+    "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92633ed1.css",
+    "static/js/main.1b4d6237.js"
+  ]
+}
