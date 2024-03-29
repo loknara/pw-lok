@@ -43,53 +43,7 @@
   color: white;
 }
 
-.skills {
-  font-size: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  
-    
-}
 
-.skills h1 {
-  color: #ffffff;
-  font-size: 50px;
-}
-
-.skills .list {
-  list-style: none;
-  width: 60%;
-}
-
-.list span {
-  font-size: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  .about h2 {
-    font-size: 40px;
-  }
-
-  .about .prompt {
-    margin-top: 10px;
-    font-size: 20px;
-    width: 80%;
-  }
-
-  .skills {
-    text-align: center;
-  }
-  .list {
-    padding: 0;
-  }
-
-  .skills h2 {
-    font-size: 30px;
-  }
-}
 
 @keyframes bounce {
   0%, 100% {
@@ -121,78 +75,9 @@
 
 /* ... your existing styles ... */
 
-.profileContainer {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  background-color: #000000;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-  justify-content: center;
-}
+/* z */
 
-.profileHeader {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  color: #ffffff;
-  background-color: #000000;
-}
 
-.profilePhoto {
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  object-fit: cover;
-}
-
-.infoSection h1 {
-  margin: 0;
-  color: #ffffff;
-}
-
-.infoSection p {
-  margin: 4px 0;
-  color: #ffffff;
-}
-
-.skillsSection,
-.bioSection {
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.skillsSection h2 {
-  margin-top: 0;
-}
-
-.bioSection p {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .profileHeader {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profilePhoto {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-  }
-}
 
 .blob-c {
 	min-height: 100vh;
@@ -312,27 +197,406 @@
   }
 }
 
-.about-title {
-  font-size: 2.5rem; /* 4xl */
-  font-weight: bold;
-  margin-bottom: 20px;
-  border-bottom: 5px solid #6366f1; /* Assuming indigo-600 */
-  padding-bottom: 8px;
-  width: 180px;
-}
 
-.about-description {
-  padding-bottom: 20px;
-  color: white;
-}
 
-.coding-illustration {
-  width: 80%;
-  margin-left: auto;
-}
 
-@media (min-width: 1024px) {
-  .coding-illustration {
-    max-width: 80%;
+
+
+
+/* jljl */
+
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-0.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-0.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-0.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-0.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-0.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-0.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E800-E83B;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-1.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-1.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-1.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-1.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-1.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-1.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E83C-E877;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-10.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-10.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-10.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-10.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-10.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-10.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EA5B-EA96;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-11.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-11.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-11.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-11.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-11.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-11.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EA97-EAD4;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-12.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-12.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-12.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-12.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-12.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-12.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EAD5-EB11;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-13.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-13.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-13.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-13.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-13.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-13.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EB12-EB4D;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-14.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-14.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-14.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-14.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-14.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-14.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EB4E-EB89;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-15.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EB8A-EBC5;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-16.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-16.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-16.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-16.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-16.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-16.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EBC6-EC01;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-17.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-17.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-17.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-17.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-17.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-17.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EC02-EC3D;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-18.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-18.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-18.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-18.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-18.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-18.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EC3E-EC79;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-19.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-19.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-19.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-19.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-19.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-19.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EC7A-ECB5;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-2.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-2.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-2.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-2.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-2.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-2.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E878-E8B3;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-20.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-20.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-20.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-20.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-20.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-20.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+ECB6-ECB9;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-3.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-3.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-3.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-3.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-3.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-3.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E8B4-E8EF;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-4.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-4.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-4.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-4.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-4.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-4.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E8F0-E92B;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-5.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-5.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-5.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-5.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-5.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-5.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E92C-E967;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-6.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-6.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-6.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-6.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-6.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-6.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E968-E9A4;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-7.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-7.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-7.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-7.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-7.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-7.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E9A5-E9E1;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-8.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-8.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-8.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-8.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-8.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-8.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+E9E2-EA1D;
+} 
+@font-face { 
+  font-family:unicons-line;
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-9.eot);
+  src:url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-9.eot#iefix) format('embedded-opentype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-9.woff2) format('woff2'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-9.woff) format('woff'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-9.ttf) format('truetype'),url(https://unicons.iconscout.com/release/v4.0.0/fonts/line/unicons-9.svg#unicons) format('svg');
+  font-weight:400;
+  font-style:normal;
+  unicode-range:U+EA1E-EA5A;
+} 
+@font-face { 
+  font-family:boxicons;
+  font-weight:400;
+  font-style:normal;
+  src:url(https://unpkg.com/boxicons@2.1.2/fonts/boxicons.eot);
+  src:url(https://unpkg.com/boxicons@2.1.2/fonts/boxicons.eot) format('embedded-opentype'),url(https://unpkg.com/boxicons@2.1.2/fonts/boxicons.woff2) format('woff2'),url(https://unpkg.com/boxicons@2.1.2/fonts/boxicons.woff) format('woff'),url(https://unpkg.com/boxicons@2.1.2/fonts/boxicons.ttf) format('truetype'),url(https://unpkg.com/boxicons@2.1.2/fonts/boxicons.svg?#boxicons) format('svg');
+}
+.section { 
+    /* padding: 6rem 0 2rem; */
+} 
+
+h2 { 
+    color: var(--title-color); 
+    font-weight: var(--font-semi-bold);
+} 
+
+.section__title { 
+    font-size: var(--h1-font-size); 
+    color: var(--title-color);
+} 
+
+.section__title { 
+    text-align: center;
+} 
+
+.section__subtitle { 
+    display: block; 
+    font-size: var(--small-font-size); 
+    margin-bottom: 4rem;
+} 
+
+.section__subtitle { 
+    text-align: center;
+} 
+
+.abtcontainer { 
+    max-width: 1021px; 
+    margin-left: auto; 
+    margin-right: auto;
+} 
+
+.grid { 
+    display: grid; 
+    gap: 1.5rem;
+} 
+
+.about__container { 
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center; 
+    column-gap: 4rem;
+} 
+
+img { 
+    max-width: 100%; 
+    height: auto;
+} 
+
+.about__img { 
+    width: 350px; 
+    border-radius: 1.5rem; 
+    justify-self: center;
+} 
+
+.about__info { 
+    grid-template-columns: repeat(3, 140px); 
+    gap: 0.5rem; 
+    margin-bottom: var(--mb-2);
+} 
+
+.about__description { 
+    padding: 0 4rem 0 0; 
+    margin-bottom: var(--mb-2-5);
+} 
+
+a { 
+    text-decoration: none;
+} 
+
+.button { 
+    display: inline-block; 
+    background-color: var(--title-color); 
+    color: var(--container-color); 
+    padding: 1.25rem 2rem; 
+    border-radius: 1rem; 
+    font-weight: var(--font-medium);
+} 
+
+.button--flex { 
+    display: inline-flex; 
+    align-items: center;
+} 
+
+.button:hover { 
+    background-color: var(--title-color-dark);
+} 
+
+.about__box { 
+    background-color: var(--container-color); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 0.75rem; 
+    text-align: center; 
+    padding: 1rem 1.25rem;
+} 
+
+.button__icon { 
+    margin-left: var(--mb-0-5);
+} 
+
+.bx { 
+    font-family: boxicons!important; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-variant: normal; 
+    line-height: 1; 
+    text-rendering: auto; 
+    display: inline-block; 
+    text-transform: none; 
+    speak: none; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+.about__icon { 
+    font-size: 1.5rem; 
+    color: var(--title-color); 
+    margin-bottom: var(--mb-0-5);
+} 
+
+.bx-award:before { 
+    content: "\e9bf";
+} 
+
+h3 { 
+    color: var(--title-color); 
+    font-weight: var(--font-semi-bold);
+} 
+
+.about__title { 
+    font-size: var(--small-font-size); 
+    font-weight: var(--font-medium);
+} 
+
+.about__subtitle { 
+    font-size: var(--tiny-font-size);
+} 
+
+.bx-briefcase-alt:before { 
+    content: "\ea01";
+} 
+
+[class^="uil-"]:before, [class*=" uil-"]::before { 
+    font-family: unicons-line; 
+    font-style: normal; 
+    font-weight: 400; 
+    speak: none; 
+    display: inline-block; 
+    text-decoration: inherit; 
+    font-variant: normal; 
+    text-transform: none; 
+    line-height: 1; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+.uil-graduation-cap:before { 
+    content: '\e905';
+} 
+
+/* Existing CSS for your "About Me" section */
+/* Place your existing CSS here */
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+  .section__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .abtcontainer {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .about__img {
+    width: 200px;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about__description {
+    padding: 0;
   }
 }
+
+/* For small devices */
+@media screen and (min-width: 568px) {
+  .about__img {
+    width: 300px;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .about__container {
+    column-gap: 2rem;
+  }
+
+  .about__img {
+    width: 350px;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 140px);
+  }
+
+  .about__description {
+    padding: 0 4rem 0 0;
+  }
+}
+
+

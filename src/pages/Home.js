@@ -1,101 +1,3 @@
-// import React from "react";
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// import EmailIcon from '@mui/icons-material/Email';
-// import GitHubIcon from '@mui/icons-material/GitHub';
-// import Box from '@mui/material/Box';
-// import Grid from '@mui/material/Unstable_Grid2';
-// import "../styles/Home.css";
-// import { useTypingEffect } from "../components/typingEffect";
-// import Lokesh from "../assets/lokeshheadshot.jpeg";
-// import { styled } from '@mui/material/styles';
-
-// import Paper from '@mui/material/Paper';
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: 'center',
-//   color: theme.palette.text.secondary,
-// }));
-
-// function Home() {
-
-//   const introText = useTypingEffect("hi, my name is Lokesh", 100);
-//   const captionTect = useTypingEffect("This is a little bit about me...", 50);
-
-//   return (
-//     <div className="home">
-//       <div className="about">
-//         <h2> {introText}</h2>
-//         <div className="prompt">
-//           <a href="https://www.linkedin.com/in/lokeshnarasani/" target="_blank" rel="noopener noreferrer">
-//             <LinkedInIcon />
-//           </a>
-//           <a href="mailto:lokeshnarasani@gmail.com" target="_top">
-//             <EmailIcon />
-//           </a>
-//           <a href="https://github.com/loknara" target="_blank" rel="noopener noreferrer">
-//             <GitHubIcon />
-//           </a>
-//         </div>
-//         <div className="arrow">
-//           <span>⌄</span>
-//         </div>
-//       </div>
-
-//       <div className="skills">
-//   <div className="aboutMove">
-//     <h1 className="aboutText">about me</h1>
-//   </div>
-//   <div className="profileContainer">
-//   <Box md={{ flexGrow: 10 }}>
-//       <Grid container spacing={3}>
-//         <Grid md={12}>
-//           <Item>xs=8</Item>
-//         </Grid>
-//         <Grid md={4}>
-//           <Item>xs=4</Item>
-//         </Grid>
-//         <Grid md={4}>
-//           <Item>xs=4</Item>
-//         </Grid>
-//         <Grid md={8}>
-//           <Item>xs=8</Item>
-//         </Grid>
-//       </Grid>
-//     </Box>
-//       {/* <div className="profileHeader">
-//         <img src={Lokesh} alt="Lokesh Narasani" className="profilePhoto" />
-//         <div className="infoSection">
-//           <h1>Lokesh Narasani</h1>
-//           <p>Dallas, TX</p>
-//           <p>UT Dallas (2021 - 2025)</p>
-//           <p>B.S in Computer Science</p>
-//         </div>
-//       </div>
-
-//       <div className="skillsSection">
-//         <h2>Skills</h2>
-//         <p>Languages: Python, Java, JS, C++, HTML, CSS</p>
-//         <p>Frameworks: Django, Flask, Spring, React, Vue, Node, Express</p>
-//         <p>Tools: Jest, Git, Docker, Jenkins, Postman, AWS, OpenShift, Kubernetes</p>
-//       </div>
-
-//       <div className="bioSection">
-//         <p>
-//           Hey! Welcome to my website, where you can get a grasp about who I am and what I do. Currently, I am a
-//           college student studying computer science, but I look forward to becoming a full-stack software engineer.
-//         </p>
-//       </div> */}
-//     </div>
-//     </div>
-
-//     </div>
-//   );
-// }
-
-// export default Home;
-
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -142,7 +44,7 @@ function Home() {
           <div class="shape-blob six"></div>
         </div>
         <div className="about">
-          <h2>{introText}</h2>
+          <h2 style={{ fontWeight: "bold" }}>{introText}</h2>
           <div className="prompt">
             <a
               href="https://www.linkedin.com/in/lokeshnarasani/"
@@ -167,44 +69,70 @@ function Home() {
           </div>
         </div>
       </div>
-
-      <div className="skills">
-        <div className="aboutMove">
-          <h1 className="aboutText">About me</h1>
-        </div>
-        <div className="profileContainer">
-          <div className="about-img">
-            <img
-              src={Lokesh}
-              alt="coding illustration"
-              className="coding-illustration"
-            />
+      <section class="about section snipcss-XRkmm" id="aboutme">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle"></span>
+        <div class="about__container abtcontainer grid">
+          <img src={Lokesh} alt="" class="about__img" />
+          <div class="about__data">
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="bx bx-briefcase-alt about__icon"></i>
+                <h3 class="about__title">Working</h3>
+                <span class="about__subtitle">Dallas Mavericks</span>
+              </div>
+              <div class="about__box">
+                <i class="uil uil-graduation-cap about__icon"></i>
+                <h3 class="about__title">Student</h3>
+                <span class="about__subtitle">Junior at UTD</span>
+              </div>
+              <div class="about__box">
+                <i class="bx bx-briefcase-alt about__icon"></i>
+                <h3 class="about__title">Aspiring</h3>
+                <span class="about__subtitle">Software Engineer</span>
+              </div>
+            </div>
+            <p class="about__description">
+              I am a Junior at The University of Texas at Dallas, majoring in
+              Computer, and currenlty work with the Dallas Mavericks as a
+              Software Engineering Intern.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1o8p5EQJC7inW17eNMp28yLgBqo8FSP5N/view?usp=sharing"
+              class="button button--flex"
+              target="_blank"
+            >
+              View My Resume
+              <svg
+                class="button__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                outline="white"
+              >
+                <path
+                  d="M15.25 22.7502H9.25C3.82 22.7502 1.5 20.4302 1.5 15.0002V9.00024C1.5 3.57024 3.82 1.25024 9.25 1.25024H14.25C14.66 1.25024 15 1.59024 15 2.00024C15 2.41024 14.66 2.75024 14.25 2.75024H9.25C4.64 2.75024 3 4.39024 3 9.00024V15.0002C3 19.6102 4.64 21.2502 9.25 21.2502H15.25C19.86 21.2502 21.5 19.6102 21.5 15.0002V10.0002C21.5 9.59024 21.84 9.25024 22.25 9.25024C22.66 9.25024 23 9.59024 23 10.0002V15.0002C23 20.4302 20.68 22.7502 15.25 22.7502Z"
+                  fill="var(--container-color)"
+                ></path>
+                <path
+                  d="M22.25 10.7502H18.25C14.83 10.7502 13.5 9.42023 13.5 6.00023V2.00023C13.5 1.70023 13.68 1.42023 13.96 1.31023C14.24 1.19023 14.56 1.26023 14.78 1.47023L22.78 9.47023C22.99 9.68023 23.06 10.0102 22.94 10.2902C22.82 10.5702 22.55 10.7502 22.25 10.7502ZM15 3.81023V6.00023C15 8.58023 15.67 9.25023 18.25 9.25023H20.44L15 3.81023Z"
+                  fill="var(--container-color)"
+                ></path>
+                <path
+                  d="M13.25 13.7502H7.25C6.84 13.7502 6.5 13.4102 6.5 13.0002C6.5 12.5902 6.84 12.2502 7.25 12.2502H13.25C13.66 12.2502 14 12.5902 14 13.0002C14 13.4102 13.66 13.7502 13.25 13.7502Z"
+                  fill="var(--container-color)"
+                ></path>
+                <path
+                  d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
+                  fill="var(--container-color)"
+                ></path>
+              </svg>
+            </a>
           </div>
-          <div className="about-info">
-            <p className="about-description">
-              Hello! My name is Lokesh Narasani, and I am an undergraduate
-              student at the University of Texas at Dallas studying Computer
-              Science. Im currenlty a Software Engineering Intern with the
-              Dallas Mavericks!
-            </p>
-            <p className="about-description">
-              I am familiar with and have used React, Vue, HTLM, CSS, Tailwind,
-              axios, fetch, and other tools in the frontend.
-            </p>
-
-            <p className="about-description">
-              I have used and am familiar with Java, Python, Flask, Django, C++,
-              Sping Boot, Node, Express, and JS and various other tools as well.
-            </p>
-
-            <p className="about-description">
-              In my free time I like to watch basketball, play golf, go for
-              hikes, and play video games. PS. Dont ask me about my golf
-              handicap I am working on it!
-            </p>
-          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

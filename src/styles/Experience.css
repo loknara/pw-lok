@@ -40,6 +40,17 @@
     
 }
 
+.projcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    
+}
+
 .container .custom-card { 
     position: relative;
     display: flex;
