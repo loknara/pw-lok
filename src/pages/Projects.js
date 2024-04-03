@@ -33,7 +33,7 @@ function Experience() {
       <div className="tag-filter-container">
         <TagFilter availableTags={tags} onFilterChange={handleFilterChange} />
       </div>
-      <div className="container">
+      <div className="expcontainer">
         {filteredProjects.map((project, index) => (
           <div className="custom-card" key={project.id}>
             <div className="img-box">
