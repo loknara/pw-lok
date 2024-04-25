@@ -2,7 +2,7 @@ import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import "./home.scss";
+import "../styles/Home.scss";
 import { useTypingEffect } from "../components/typingEffect";
 import Lokesh from "../assets/lokeshheadshot.jpeg";
 import Sign from "../assets/sign.png";
@@ -10,11 +10,11 @@ import Card from "../components/Card";
 import ContactCard from "../components/ContactCard";
 import ProfileCard from "../components/ProfileCard";
 import PortfolioCard from "../components/PortfolioCard";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const introText = useTypingEffect("Hi, my name is Lokesh", 100);
-  const captionText = useTypingEffect("This is a little bit about me...", 50);
-
   return (
     <div>
       <div className="home">
@@ -106,7 +106,12 @@ function Home() {
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                 >
-                  <a href="/experience">
+                  <a
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/experience");
+                    }}
+                  >
                     <Card
                       title="Credentials"
                       subtitle="More about me"
@@ -142,12 +147,6 @@ function Home() {
                 </h4>
               </div>
             </Card>
-            {/* <Card
-              title="About Me"
-              desc="I am a Junior at The University of Texas at Dallas, majoring in Computer science, and currenlty work with the Dallas Mavericks as a Software Engineering Intern. I enjoy playing video games, watching basketball, and getting out on the golf course!"
-              // smallcard
-              // image={Lokesh}
-            /> */}
           </div>
           <div
             className="middle"
@@ -193,10 +192,10 @@ function Home() {
                 <h1>2025</h1>
                 <h4>Graduate</h4>
               </div>
-              {/* <div className="card">
+              <div className="card">
                 <h1></h1>
                 <h4></h4>
-              </div> */}
+              </div>
             </div>
           </div>
           <ContactCard />

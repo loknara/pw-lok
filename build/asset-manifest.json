@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ee3daf8a.css",
-    "main.js": "/static/js/main.84038d98.js",
+    "main.js": "/static/js/main.7c10f600.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/NBA.png": "/static/media/NBA.34150ba6cafc506a9484.png",
     "static/media/DallasMavs.png": "/static/media/DallasMavs.5ecc7c0ead879cbc22a7.png",
@@ -14,11 +14,11 @@
     "static/media/icon.svg": "/static/media/icon.4732ec8d0f2d830fb916568ba6a7b501.svg",
     "index.html": "/index.html",
     "main.ee3daf8a.css.map": "/static/css/main.ee3daf8a.css.map",
-    "main.84038d98.js.map": "/static/js/main.84038d98.js.map",
+    "main.7c10f600.js.map": "/static/js/main.7c10f600.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee3daf8a.css",
-    "static/js/main.84038d98.js"
+    "static/js/main.7c10f600.js"
   ]
 }
