@@ -14,21 +14,19 @@ function Experience() {
         <VerticalTimelineElement
           animate={true}
           className="vertical-timeline-element--education"
-          date="2021-2025"
+          date="August 2021- May 2025"
           iconStyle={{ background: "#000000", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
             The University of Texas at Dallas
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            August 2021 - May 2025
-          </h4>
+
           <h4 className="vertical-timeline-element-subtitle">
             Bachelor's Degree
           </h4>
 
-          <p> Computer Science</p>
+          <p> B.S Computer Science</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -39,9 +37,7 @@ function Experience() {
           <h3 className="vertical-timeline-element-title">
             Tobu Pengin - Software Engineering Intern
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            June 2021 - September 2021
-          </h4>
+
           <h4 className="vertical-timeline-element-subtitle">Dallas, Tx</h4>
           <p>
             Developed an end to end open-source CRM cloud solution for an ERP
@@ -58,9 +54,7 @@ function Experience() {
           <h3 className="vertical-timeline-element-title">
             UTDesign - Software Engineer (Contract)
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            January 2023 - May 2023
-          </h4>
+
           <h4 className="vertical-timeline-element-subtitle">Richardson, TX</h4>
           <p>
             Managed a team of 4 to build a service provider enabling login and
@@ -76,9 +70,7 @@ function Experience() {
           <h3 className="vertical-timeline-element-title">
             PNC - Software Engineering Intern
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            May 2023 - August 2023
-          </h4>
+
           <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
           <p>
             Developed an end to end solution for tracking Cloud costs and
@@ -95,9 +87,7 @@ function Experience() {
           <h3 className="vertical-timeline-element-title">
             Machine Learning and Artificial Intelligence Lab Researcher
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            August 2023 - Present
-          </h4>
+
           <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
 
           <p>
@@ -115,9 +105,7 @@ function Experience() {
           <h3 className="vertical-timeline-element-title">
             Dallas Mavericks - Software Engineering Intern
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            February 2024 - present
-          </h4>
+
           <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
 
           <p>

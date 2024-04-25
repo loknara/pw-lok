@@ -14,10 +14,8 @@ const ContactCard = () => {
         <div className="wrapper">
           <img src={Icon} alt="" className="icon2" />
           <div className="textbox">
-            <h3>Lets</h3>
-            <h3>
-              work <span className="blue">Together</span>
-            </h3>
+            <h3>Looking for</h3>
+            <h3>New Grad Positions</h3>
           </div>
         </div>
       </Card>

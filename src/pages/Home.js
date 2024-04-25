@@ -67,7 +67,7 @@ function Home() {
                 <Card
                   title="Lokesh Narasani"
                   subtitle=""
-                  desc="Junior at UT Dallas Studying Computer Science"
+                  desc="Senior at UT Dallas Studying Computer Science"
                   image={Lokesh}
                   smallcard
                   direction={"row"}
@@ -79,6 +79,11 @@ function Home() {
                 <div className="banner">
                   <div className="marquee">
                     <div>
+                      <span>
+                        <p>
+                          All About <b>Me</b>
+                        </p>
+                      </span>
                       <span>
                         <p>
                           All About <b>Me</b>
@@ -113,8 +118,8 @@ function Home() {
                     }}
                   >
                     <Card
-                      title="Credentials"
-                      subtitle="More about me"
+                      title="Experiences"
+                      subtitle="Professional Work"
                       desc=""
                       direction="column"
                       image={Sign}
@@ -139,11 +144,13 @@ function Home() {
             <Card title="About Me" smallcard>
               <div>
                 <h4>
-                  I am a Junior at The University of Texas at Dallas, majoring
-                  in Computer science, and currenlty work with the Dallas
-                  Mavericks as a Software Engineering Intern. I enjoy playing
-                  video games, watching basketball, and getting out on the golf
-                  course!
+                  Hello! My name is Lokesh and I am a Senior at The University
+                  of Texas at Dallas, majoring in Computer Science. I am
+                  currently working with the Dallas Mavericks as a Software
+                  Engineering Intern, developing an analytics dashboard for the
+                  front office. Outside of school and work, I enjoy working on
+                  personal projects, watching basketball, and getting out on the
+                  golf course!
                 </h4>
               </div>
             </Card>
@@ -155,27 +162,31 @@ function Home() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
-            <Card title="TechStack" subtitle="what i know" smallcard>
+            <Card title="Skills" subtitle="Languages and Frameworks" smallcard>
               <div className="languages">
+                <h4>Python</h4>
+                <h4>Java</h4>
+                <h4>C++</h4>
+                <h4>Javascript</h4>
                 <h4>HTML</h4>
                 <h4>CSS</h4>
-                <h4>SCSS</h4>
-                <h4>NodeJs</h4>
-                <h4>React</h4>
                 <h4>SQL</h4>
-                <h4>Firebase</h4>
-                <h4>Express JS</h4>
-                <h4>Javascript</h4>
-                <h4>LlamaIndex</h4>
-                <h4>Python</h4>
-                <h4>Flask</h4>
+                <h4>express.js</h4>
+                <h4>Node.js</h4>
+                <h4>SpringBoot</h4>
                 <h4>Django</h4>
+                <h4>Flask</h4>
+                <h4>React</h4>
+                <h4>Git</h4>
+                <h4>Docker</h4>
+                <h4>Postman</h4>
+                <h4>Jest</h4>
               </div>
             </Card>
           </div>
           <ProfileCard />
         </section>
-        <section className="bottom-section container">
+        {/* <section className="bottom-section container">
           <div
             className="left"
             data-aos="zoom-in"
@@ -185,21 +196,17 @@ function Home() {
           >
             <div className="card card-wrapper">
               <div className="card">
-                <h1>4</h1>
-                <h4>internships</h4>
+                <h1>4+</h1>
+                <h4>Internships</h4>
               </div>
               <div className="card">
                 <h1>2025</h1>
                 <h4>Graduate</h4>
               </div>
-              <div className="card">
-                <h1></h1>
-                <h4></h4>
-              </div>
             </div>
           </div>
           <ContactCard />
-        </section>
+        </section> */}
       </section>
     </div>
   );

@@ -18,7 +18,7 @@ const PortfolioCard = () => {
       >
         <Card
           title="Portfolio"
-          subtitle="See in action"
+          subtitle="Personal Projects"
           desc=""
           direction="column"
           image={PortfolioBanner}

@@ -41,6 +41,7 @@ function Experience() {
             </div>
             <div className="custom-content">
               <h2>{project.name}</h2>
+
               <p>{project.skills}</p>
               <button onClick={() => navigate(`/project/${project.id}`)}>
                 Read More
