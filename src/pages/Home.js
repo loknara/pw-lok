@@ -14,7 +14,7 @@ function Home() {
           <h1 className="name">lokesh</h1>
           <h1 className="name">narasani</h1>
           <p className="role">software engineer @ jpmorgan chase</p>
-          <p className="description">i like building stuff</p>
+          <p className="description">exploring the world of possibilities</p>
         </header>
 
         {/* About Section */}
@@ -27,8 +27,24 @@ function Home() {
               <br /><br />
               i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, and PNC, and co-founded two startups - one that failed (spin) and one that exited for $1.6m (diet ai).
               <br /><br />
-              i enjoy building products, solving hard problems, and working on projects that make an impact.
+              i enjoy building products, solving hard problems, talking about the stock market, and working on projects that make an impact.
             </p>
+          </div>
+        </section>
+
+        <section className="experience-section">
+          <h2>currently @</h2>
+          <div className="experience-list">
+            <div className="experience-item">
+              <div className="company">
+                <h3>JPMorgan Chase & Co.</h3>
+                <p className="position">Software Engineering </p>
+                <p className="duration">July 2025</p>
+                <p className="description">Work tbd on chase rewards</p>
+                <p className="location">Plano, TX</p>
+              </div>
+            </div>
+          
           </div>
         </section>
 
