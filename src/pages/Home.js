@@ -3,211 +3,176 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../styles/Home.scss";
-import { useTypingEffect } from "../components/typingEffect";
-import Lokesh from "../assets/lokeshheadshot.jpeg";
-import Sign from "../assets/sign.png";
-import Card from "../components/Card";
-import ContactCard from "../components/ContactCard";
-import ProfileCard from "../components/ProfileCard";
-import PortfolioCard from "../components/PortfolioCard";
-import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const navigate = useNavigate();
-  const introText = useTypingEffect("Hi, my name is Lokesh", 100);
   return (
-    <div>
-      <div className="home">
-        <div class="blob-c">
-          <div class="shape-blob"></div>
-          <div class="shape-blob one"></div>
-          <div class="shape-blob two"></div>
-          <div class="shape-blob three"></div>
-          <div class="shape-blob four"></div>
-          <div class="shape-blob five"></div>
-          <div class="shape-blob six"></div>
-        </div>
-        <div className="header">
-          <h2 style={{ fontWeight: "bold" }}>{introText}</h2>
-          <div className="prompt">
-            <a
-              href="https://www.linkedin.com/in/lokeshnarasani/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+    <div className="home">
+      <div className="container">
+        {/* Header */}
+        <header className="header">
+          <h1>hi, i'm</h1>
+          <h1 className="name">lokesh</h1>
+          <h1 className="name">narasani</h1>
+          <p className="role">software engineer @ jpmorgan chase</p>
+          <p className="description">i like building stuff</p>
+        </header>
+
+        {/* About Section */}
+        <section className="about-section">
+          <h2>me</h2>
+          <div className="about-content">
+            <h3>Lokesh Narasani</h3>
+            <p>
+              hi, i'm lokesh. i'm a software engineer @ jpmorgan chase.
+              <br /><br />
+              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, and PNC, and co-founded two startups - one that failed (spin) and one that exited for $1.6m (diet ai).
+              <br /><br />
+              i enjoy building products, solving hard problems, and working on projects that make an impact.
+            </p>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section className="experience-section">
+          <h2>previously @</h2>
+          <div className="experience-list">
+            <div className="experience-item">
+              <div className="company">
+                <h3>JPMorgan Chase & Co.</h3>
+                <p className="position">Software Engineering Intern</p>
+                <p className="duration">June 2024 - August 2024</p>
+                <p className="description">AWS/Terraform framework, deployment automation</p>
+                <p className="location">Plano, TX</p>
+              </div>
+            </div>
+            <div className="experience-item">
+              <div className="company">
+                <h3>Dallas Mavericks</h3>
+                <p className="position">Software Engineering Intern</p>
+                <p className="duration">February 2024 - June 2024</p>
+                <p className="description">React/Flask analytics dashboard, NBA stats processing</p>
+                <p className="location">Dallas, TX</p>
+              </div>
+            </div>
+            <div className="experience-item">
+              <div className="company">
+                <h3>PNC</h3>
+                <p className="position">Software Engineering Intern</p>
+                <p className="duration">May 2023 - August 2023</p>
+                <p className="description">Cloud cost tracking, NL-to-SQL chatbot, performance optimization</p>
+                <p className="location">Dallas, TX</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Startup Section */}
+        <section className="startup-section">
+          <h2>startup</h2>
+          <div className="startup-list">
+            <div className="startup-item">
+              <div className="company">
+                <h3>Diet AI (Exited)</h3>
+                <p className="position">Founding Engineer</p>
+                <p className="description">Seed-funded nutrition coach, $100K+ MRR, $1.6M acquisition</p>
+                <a href="https://www.dietapp.ai/" target="_blank" rel="noopener noreferrer" className="link">Website</a>
+              </div>
+            </div>
+            <div className="startup-item">
+              <div className="company">
+                <h3>Spin (Failed)</h3>
+                <p className="position">Founder/Founding Engineer</p>
+                <p className="description">LLM-driven cloud orchestration platform, multi-cloud automation</p>
+                <a href="https://tryspin.io/" target="_blank" rel="noopener noreferrer" className="link">Website</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        {/* Projects Section */}
+        <section className="projects-section">
+          <h2>projects</h2>
+          <div className="projects-list">
+            <div className="project-item">
+              <h3>DecentraHealth</h3>
+              <p className="project-description">Zoom-like video consult platform with IPFS, computer vision wound analysis</p>
+              <p className="project-tech">Node.js, Express.js, OpenCV, Flask, Pinata, TailwindCSS</p>
+              <a href="https://youtu.be/l2mwDE8qzEA?si=LyWGvD1XmMgKgSJr" target="_blank" rel="noopener noreferrer" className="project-link">Demo</a>
+            </div>
+            <div className="project-item">
+              <h3>CanCare</h3>
+              <p className="project-description">Cancer patient mentor-matching platform using BERT-based compatibility algorithms</p>
+              <p className="project-tech">React, Python, LlamaIndex, Flask, Firebase</p>
+              <a href="https://github.com/cfgtexas23/Team-20/tree/main" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+            </div>
+            <div className="project-item">
+              <h3>StateFarm ClaimGuardian</h3>
+              <p className="project-description">Insurance claims platform for small businesses with GPT embeddings</p>
+              <p className="project-tech">React Native, Python, GPT Embeddings, ElevenLabs</p>
+              <a href="https://devpost.com/software/sf-1nmvi7?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank" rel="noopener noreferrer" className="project-link">Demo</a>
+            </div>
+            <div className="project-item">
+              <h3>Kiddie Bank</h3>
+              <p className="project-description">Financial education web app for children aged 8-16</p>
+              <p className="project-tech">Python, Django, JavaScript, HTML, CSS, SQLite</p>
+              <a href="https://github.com/loknara/KiddieBank" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+            </div>
+            <div className="project-item">
+              <h3>NBA Analytics Tool</h3>
+              <p className="project-description">Sports betting analysis with 67% game prediction accuracy</p>
+              <p className="project-tech">React, Python, Flask, Scikit-Learn</p>
+              <a href="https://github.com/loknara/Prop-er" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+            </div>
+            <div className="project-item">
+              <h3>UTD SSO</h3>
+              <p className="project-description">SSO service provider for 5,000+ UTD students across EPICS projects</p>
+              <p className="project-tech">Node.js, Express.js</p>
+              <a href="https://github.com/UTDallasEPICS/epics-sso" target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section className="skills-section">
+          <h2>skills</h2>
+          <div className="skills-grid">
+            <span>Python</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>C++</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Flask</span>
+            <span>Django</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Git</span>
+            <span>Spring Boot</span>
+            <span>Express.js</span>
+            <span>Firebase</span>
+            <span>LangChain</span>
+          </div>
+        </section>
+
+
+        {/* Contact */}
+        <footer className="contact-section">
+          <div className="social-links">
+            <a href="https://www.linkedin.com/in/lokeshnarasani/" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon />
             </a>
-            <a href="mailto:lokeshnarasani@gmail.com" target="_top">
+            <a href="mailto:lokeshnarasani@gmail.com">
               <EmailIcon />
             </a>
-            <a
-              href="https://github.com/loknara"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com/loknara" target="_blank" rel="noopener noreferrer">
               <GitHubIcon />
             </a>
           </div>
-          <div className="arrow">
-            <span>⌄</span>
-          </div>
-        </div>
+          <p className="location">down to relocate anywhere</p>
+        </footer>
       </div>
-      <section>
-        <section className="section  container">
-          <div className="hero-section">
-            <div
-              className="left-section"
-              data-aos="zoom-in"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-            >
-              <a>
-                <Card
-                  title="Lokesh Narasani"
-                  subtitle=""
-                  desc="Senior at UT Dallas Studying Computer Science"
-                  image={Lokesh}
-                  smallcard
-                  direction={"row"}
-                />
-              </a>
-            </div>
-            <div className="right-section">
-              <div className="top-section card">
-                <div className="banner">
-                  <div className="marquee">
-                    <div>
-                      <span>
-                        <p>
-                          All About <b>Me</b>
-                        </p>
-                      </span>
-                      <span>
-                        <p>
-                          All About <b>Me</b>
-                        </p>
-                      </span>
-                      <span>
-                        <p>
-                          All About <b>Me</b>
-                        </p>
-                      </span>
-                      <span>
-                        <p>
-                          All About <b>Me</b>
-                        </p>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bottom-section">
-                <div
-                  className="card-section"
-                  data-aos="zoom-in"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                >
-                  <a
-                    onClick={(e) => {
-                      e.preventDefault();
-                      navigate("/experience");
-                    }}
-                  >
-                    <Card
-                      title="Experiences"
-                      subtitle="Professional Work"
-                      desc=""
-                      direction="column"
-                      image={Sign}
-                      smallcard
-                    />
-                  </a>
-
-                  <PortfolioCard />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="middlesection container">
-          <div
-            className="left"
-            data-aos="zoom-in"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <Card title="About Me" smallcard>
-              <div>
-                <h4>
-                  Hello! My name is Lokesh and I am a Senior at The University
-                  of Texas at Dallas, majoring in Computer Science. I am
-                  currently working with the Dallas Mavericks as a Software
-                  Engineering Intern, developing an analytics dashboard for the
-                  front office. Outside of school and work, I enjoy working on
-                  personal projects, watching basketball, and getting out on the
-                  golf course!
-                </h4>
-              </div>
-            </Card>
-          </div>
-          <div
-            className="middle"
-            data-aos="zoom-in"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <Card title="Skills" subtitle="Languages and Frameworks" smallcard>
-              <div className="languages">
-                <h4>Python</h4>
-                <h4>Java</h4>
-                <h4>C++</h4>
-                <h4>Javascript</h4>
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>SQL</h4>
-                <h4>express.js</h4>
-                <h4>Node.js</h4>
-                <h4>SpringBoot</h4>
-                <h4>Django</h4>
-                <h4>Flask</h4>
-                <h4>React</h4>
-                <h4>Git</h4>
-                <h4>Docker</h4>
-                <h4>Postman</h4>
-                <h4>Jest</h4>
-              </div>
-            </Card>
-          </div>
-          <ProfileCard />
-        </section>
-        {/* <section className="bottom-section container">
-          <div
-            className="left"
-            data-aos="zoom-in"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="card card-wrapper">
-              <div className="card">
-                <h1>4+</h1>
-                <h4>Internships</h4>
-              </div>
-              <div className="card">
-                <h1>2025</h1>
-                <h4>Graduate</h4>
-              </div>
-            </div>
-          </div>
-          <ContactCard />
-        </section> */}
-      </section>
     </div>
   );
 }
