@@ -2,6 +2,7 @@ import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import StockCarousel from "../components/StockCarousel";
 import "../styles/Home.scss";
 
 function Home() {
@@ -25,8 +26,8 @@ function Home() {
             <p>
               hi, i'm lokesh. i'm a software engineer @ jpmorgan chase.
               <br /><br />
-              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, and PNC, and co-founded two startups - one that failed (spin) and one that exited for $1.6m (diet ai).
-              <br /><br />
+              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, PNC, founded a startup that didnt scale (spin) and was an investor and founding engineer at diet ai, which exited for $1.6m .
+              <br /><br />q
               i enjoy building products, solving hard problems, talking about the stock market, and working on projects that make an impact.
             </p>
           </div>
@@ -172,6 +173,11 @@ function Home() {
           </div>
         </section>
 
+        {/* Stock Portfolio Section */}
+        <section className="portfolio-section">
+          <h2>portfolio</h2>
+          <StockCarousel />
+        </section>
 
         {/* Contact */}
         <footer className="contact-section">
