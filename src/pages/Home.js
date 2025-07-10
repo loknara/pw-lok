@@ -26,8 +26,8 @@ function Home() {
             <p>
               hi, i'm lokesh. i'm a software engineer @ jpmorgan chase.
               <br /><br />
-              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, PNC, founded a startup that didnt scale (spin) and was an investor and founding engineer at diet ai, which exited for $1.6m .
-              <br /><br />q
+              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, PNC, and was an investor and all around generalist at diet ai, which exited for $1.6m
+              <br /><br />
               i enjoy building products, solving hard problems, talking about the stock market, and working on projects that make an impact.
             </p>
           </div>
@@ -89,15 +89,15 @@ function Home() {
           <div className="startup-list">
             <div className="startup-item">
               <div className="company">
-                <h3>Diet AI (Exited)</h3>
-                <p className="position">Founding Engineer</p>
-                <p className="description">Seed-funded nutrition coach, $100K+ MRR, $1.6M acquisition</p>
+                <h3>Diet AI (Acquired)</h3>
+                <p className="position">Everything</p>
+                <p className="description">Seed-funded AI calorie tracker, $100K+ MRR, $1.6M acquisition</p>
                 <a href="https://www.dietapp.ai/" target="_blank" rel="noopener noreferrer" className="link">Website</a>
               </div>
             </div>
             <div className="startup-item">
               <div className="company">
-                <h3>Spin (Failed)</h3>
+                <h3>Spin</h3>
                 <p className="position">Founder/Founding Engineer</p>
                 <p className="description">LLM-driven cloud orchestration platform, multi-cloud automation</p>
                 <a href="https://tryspin.io/" target="_blank" rel="noopener noreferrer" className="link">Website</a>
