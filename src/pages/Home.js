@@ -14,7 +14,7 @@ function Home() {
           <h1>hi, i'm</h1>
           <h1 className="name">lokesh</h1>
           <h1 className="name">narasani</h1>
-          <p className="role">software engineer @ jpmorgan chase</p>
+          <p className="role">founding engineer @ <a href="https://itstelepathic.com/" target="_blank" rel="noopener noreferrer">telepathic</a></p>
           <p className="description">exploring the world of possibilities</p>
         </header>
 
@@ -24,9 +24,9 @@ function Home() {
           <div className="about-content">
             <h3>Lokesh Narasani</h3>
             <p>
-              hi, i'm lokesh. i'm a software engineer @ jpmorgan chase.
+              hi, i'm lokesh. i'm a founding engineer @ <a href="https://itstelepathic.com/" target="_blank" rel="noopener noreferrer">telepathic</a>.
               <br /><br />
-              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, PNC, and was an investor and all around generalist at diet ai, which exited for $1.6m
+              i've worked as a software engineering intern @ jpmorgan chase, dallas mavericks, PNC, and was an investor and all around generalist at diet ai, which exited for $1.6m.
               <br /><br />
               i enjoy building products, solving hard problems, talking about the stock market, and working on projects that make an impact.
             </p>
@@ -38,11 +38,11 @@ function Home() {
           <div className="experience-list">
             <div className="experience-item">
               <div className="company">
-                <h3>JPMorgan Chase & Co.</h3>
-                <p className="position">Software Engineering </p>
+                <h3><a href="https://itstelepathic.com/" target="_blank" rel="noopener noreferrer">telepathic</a></h3>
+                <p className="position">Founding Engineer</p>
                 <p className="duration">July 2025</p>
-                <p className="description">Work tbd on chase rewards</p>
-                <p className="location">Plano, TX</p>
+                <p className="description">helping companies get found in the new era of search</p>
+                <p className="location">San Francisco, CA</p>
               </div>
             </div>
           
