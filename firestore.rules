@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Blog posts collection
+    // - Anyone can read published posts
+    // - Only authenticated users can write (create, update, delete)
+    match /blogPosts/{postId} {
+      // Allow read access to everyone
+      allow read: if true;
+      
+      // Allow write access only to authenticated users
+      allow create, update, delete: if request.auth != null;
+    }
+    
+    // Optional: Add more restrictive rules for production
+    // Uncomment and modify as needed:
+    
+    /*
+    // Only allow reading published posts for non-authenticated users
+    match /blogPosts/{postId} {
+      allow read: if request.auth != null || resource.data.status == 'published';
+      allow create, update, delete: if request.auth != null;
+    }
+    */
+    
+    /*
+    // Only allow specific admin emails
+    match /blogPosts/{postId} {
+      allow read: if true;
+      allow write: if request.auth != null && 
+                     request.auth.token.email == 'your-admin-email@example.com';
+    }
+    */
+    
+    /*
+    // Validate post data structure
+    match /blogPosts/{postId} {
+      allow read: if true;
+      allow create: if request.auth != null &&
+                      request.resource.data.keys().hasAll(['title', 'excerpt', 'content', 'status']) &&
+                      request.resource.data.status in ['published', 'draft'];
+      allow update: if request.auth != null;
+      allow delete: if request.auth != null;
+    }
+    */
+  }
+}
+

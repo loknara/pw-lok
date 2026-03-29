@@ -1,0 +1,132 @@
+// ─── Base ────────────────────────────────────────────
+.portfolio {
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+.portfolio__container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 60px 24px 120px;
+
+    > * {
+        animation: portfolioFadeUp 0.5s ease backwards;
+
+        &:nth-child(1) { animation-delay: 0s; }
+        &:nth-child(2) { animation-delay: 0.06s; }
+        &:nth-child(3) { animation-delay: 0.12s; }
+    }
+}
+
+// ─── Hero ────────────────────────────────────────────
+.portfolio__hero {
+    margin-bottom: 72px;
+}
+
+.portfolio__title {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: clamp(48px, 7vw, 72px);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 0 0 16px;
+}
+
+.portfolio__tagline {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+// ─── Sections ────────────────────────────────────────
+.portfolio__section {
+    margin-bottom: 56px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+}
+
+.portfolio__label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin: 0 0 24px;
+}
+
+// ─── Cards ───────────────────────────────────────────
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.portfolio__card {
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: border-color 0.15s;
+
+    &:hover {
+        border-color: var(--accent);
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 8px;
+    }
+
+    p {
+        font-size: 14px;
+        color: var(--text-muted);
+        line-height: 1.65;
+        margin: 0;
+    }
+}
+
+// ─── Animation ───────────────────────────────────────
+@keyframes portfolioFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// ─── Responsive ──────────────────────────────────────
+@media (max-width: 768px) {
+    .portfolio {
+        padding-top: 80px;
+    }
+
+    .portfolio__container {
+        padding: 36px 20px 80px;
+    }
+
+    .portfolio__hero {
+        margin-bottom: 56px;
+    }
+
+    .portfolio__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio {
+        padding-top: 70px;
+    }
+
+    .portfolio__container {
+        padding: 24px 16px 60px;
+    }
+
+    .portfolio__hero {
+        margin-bottom: 40px;
+    }
+}
